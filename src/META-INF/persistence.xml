@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="JPAPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>grupof.Actividad</class>
+    <class>grupof.Alumno</class>
+    <class>grupof.Asignatura</class>
+    <class>grupof.Gestor</class>
+    <class>grupof.Matching</class>
+    <class>grupof.Mensaje</class>
+    <class>grupof.Noticia</class>
+    <class>grupof.Organizacion</class>
+    <class>grupof.PAS</class>
+    <class>grupof.PDI</class>
+    <class>grupof.ParticipacionEnActividad</class>
+    <class>grupof.Usuario</class>
+    <class>grupof.Valoracion</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
+      <property name="javax.persistence.jdbc.user" value="app"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="app"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.schema-generation.scripts.action" value="create"/>
+      <property name="javax.persistence.schema-generation.scripts.create-target" value="C:\Users\carlo\Desktop\Ingeniería Informática\Tercer año\2o CUATRIMESTRE\Sii\Trabajo en grupo\Entrega T1\generate.sql"/>
+    </properties>
+  </persistence-unit>
+</persistence>
