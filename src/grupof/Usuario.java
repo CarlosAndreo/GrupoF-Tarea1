@@ -19,7 +19,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 
 /**
- *
+ * SII
+ * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
 @Entity

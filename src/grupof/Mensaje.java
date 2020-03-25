@@ -14,7 +14,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 /**
- *
+ * SII
+ * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
 @Entity

@@ -11,7 +11,8 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 /**
- *
+ * SII
+ * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
 public class GRUPOF {

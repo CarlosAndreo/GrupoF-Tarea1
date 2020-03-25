@@ -15,7 +15,8 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 
 /**
- *
+ * SII
+ * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
 @Entity

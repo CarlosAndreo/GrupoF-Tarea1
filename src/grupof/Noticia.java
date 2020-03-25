@@ -12,7 +12,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- *
+ * SII
+ * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
 @Entity

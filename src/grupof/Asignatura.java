@@ -16,7 +16,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 /**
- *
+ * SII
+ * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
 @Entity
