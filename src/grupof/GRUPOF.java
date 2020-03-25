@@ -42,6 +42,5 @@ public class GRUPOF {
         
         em.close();
         emf.close();
-    }
-    
+    }    
 }

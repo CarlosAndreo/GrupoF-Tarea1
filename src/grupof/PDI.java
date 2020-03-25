@@ -8,9 +8,9 @@ package grupof;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
 /**
@@ -18,10 +18,10 @@ import javax.persistence.ManyToMany;
  * @author GRUPOF
  */
 @Entity
-public class PDI extends Usuario implements Serializable{
+public class PDI implements Serializable{
     private static final long serialVersionUID = 1L;
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long CodPDI;
     private String Departamento;
     private String Titulacion;
