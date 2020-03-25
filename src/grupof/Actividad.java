@@ -45,7 +45,7 @@ public class Actividad implements Serializable {
     @OneToMany
     private List<ParticipacionEnActividad> participantes;
     @OneToMany
-    private List<Valoracion> Valoracion;
+    private List<ValoracionPublica> Valoracion;
     @ManyToMany
     @JoinTable(name="jnd_matc_act",joinColumns=@JoinColumn(name="actividad_fk"),inverseJoinColumns=@JoinColumn(name="matching_fk"))
     private List<Matching> matching;
@@ -140,11 +140,11 @@ public class Actividad implements Serializable {
         this.participantes = participantes;
     }
 
-    public List<Valoracion> getValoracion() {
+    public List<ValoracionPublica> getValoracion() {
         return Valoracion;
     }
 
-    public void setValoracion(List<Valoracion> Valoracion) {
+    public void setValoracion(List<ValoracionPublica> Valoracion) {
         this.Valoracion = Valoracion;
     }
 

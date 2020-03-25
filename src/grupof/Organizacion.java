@@ -31,7 +31,7 @@ public class Organizacion implements Serializable {
     @OneToMany
     private List<Actividad> Actividades;
     @OneToMany
-    private List<Valoracion> valoraciones;
+    private List<ValoracionPrivada> valoraciones;
     public Long getCodProyecto() {
         return CodProyecto;
     }
@@ -72,11 +72,11 @@ public class Organizacion implements Serializable {
         this.Actividades = Actividades;
     }
 
-    public List<Valoracion> getValoraciones() {
+    public List<ValoracionPrivada> getValoraciones() {
         return valoraciones;
     }
 
-    public void setValoraciones(List<Valoracion> valoraciones) {
+    public void setValoraciones(List<ValoracionPrivada> valoraciones) {
         this.valoraciones = valoraciones;
     }
     

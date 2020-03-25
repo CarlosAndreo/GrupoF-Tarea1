@@ -46,8 +46,10 @@ public class Usuario implements Serializable {
     @OneToMany
     private List<Mensaje> mensajes;
     @OneToMany
-    private List<Valoracion> valoraciones;
-
+    private List<ValoracionPrivada> valoraciones;
+    @OneToMany
+    private List<ValoracionPublica> valoracionesPublicas;
+    
     public Long getUserID() {
         return UserID;
     }
@@ -176,14 +178,22 @@ public class Usuario implements Serializable {
         this.mensajes = mensajes;
     }
 
-    public List<Valoracion> getValoraciones() {
+    public List<ValoracionPrivada> getValoraciones() {
         return valoraciones;
     }
 
-    public void setValoraciones(List<Valoracion> valoraciones) {
+    public void setValoraciones(List<ValoracionPrivada> valoraciones) {
         this.valoraciones = valoraciones;
     }  
 
+    public List<ValoracionPublica> getValoracionesPublicas() {
+        return valoracionesPublicas;
+    }
+
+    public void setValoracionesPublicas(List<ValoracionPublica> valoracionesPublicas) {
+        this.valoracionesPublicas = valoracionesPublicas;
+    }
+    
     @Override
     public int hashCode() {
         int hash = 0;

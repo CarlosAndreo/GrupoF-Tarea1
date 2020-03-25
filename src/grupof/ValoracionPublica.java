@@ -17,7 +17,7 @@ import javax.persistence.Id;
  * @author GRUPOF
  */
 @Entity
-public class Valoracion implements Serializable {
+public class ValoracionPublica implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -25,7 +25,7 @@ public class Valoracion implements Serializable {
     private Long IDValoracion;
     private String TipoValoracion;
     private Integer Calificacion;
-    private String Comentarios;
+    private String ComentariosUsuario;
 
     public Long getIDValoracion() {
         return IDValoracion;
@@ -51,12 +51,12 @@ public class Valoracion implements Serializable {
         this.Calificacion = Calificacion;
     }
 
-    public String getComentarios() {
-        return Comentarios;
+    public String getComentariosUsuario() {
+        return ComentariosUsuario;
     }
 
-    public void setComentarios(String Comentarios) {
-        this.Comentarios = Comentarios;
+    public void setComentariosUsuario(String ComentariosUsuario) {
+        this.ComentariosUsuario = ComentariosUsuario;
     }
     
     @Override
@@ -69,10 +69,10 @@ public class Valoracion implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Valoracion)) {
+        if (!(object instanceof ValoracionPublica)) {
             return false;
         }
-        Valoracion other = (Valoracion) object;
+        ValoracionPublica other = (ValoracionPublica) object;
         if ((this.IDValoracion == null && other.IDValoracion != null) || (this.IDValoracion != null && !this.IDValoracion.equals(other.IDValoracion))) {
             return false;
         }
