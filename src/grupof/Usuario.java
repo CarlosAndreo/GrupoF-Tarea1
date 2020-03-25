@@ -29,10 +29,8 @@ import javax.persistence.Temporal;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn(
-    name="DiscrCOL",
-    discriminatorType=DiscriminatorType.STRING
-)
+@DiscriminatorColumn(name="DiscrCOL",discriminatorType=DiscriminatorType.STRING)
+
 @DiscriminatorValue(value="U")
 public class Usuario implements Serializable {
 

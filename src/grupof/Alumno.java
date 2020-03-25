@@ -6,30 +6,25 @@
 package grupof;
 
 import java.io.Serializable;
-import java.util.List;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import java.util.*;
+import javax.persistence.*;
 
 /**
  * SII
  * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
+
 @Entity
 @DiscriminatorValue(value="A")
 public class Alumno extends Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long CodUMA;//codAlumno
     @ManyToMany //Relacion Alumno-Asignatura
     @JoinTable(name="jnd_alum_asig",joinColumns=@JoinColumn(name="alumno_fk"),inverseJoinColumns=@JoinColumn(name="asignatura_fk"))
     private List<Asignatura> Asignaturas;
-
+    
     public Long getCodUMA() {
         return CodUMA;
     }
@@ -69,6 +64,5 @@ public class Alumno extends Usuario implements Serializable {
     @Override
     public String toString() {
         return "grupof.Alumno[ id=" + CodUMA + " ]";
-    }
-    
+    }   
 }

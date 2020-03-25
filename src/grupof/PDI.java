@@ -17,11 +17,9 @@ import javax.persistence.ManyToMany;
  * @author GRUPOF
  */
 @Entity
-@DiscriminatorValue(value="PDI")
+@DiscriminatorValue(value="PD")
 public class PDI extends Usuario implements Serializable{
     private static final long serialVersionUID = 1L;
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long CodPDI;
     private String Departamento;
     private String Titulacion;
@@ -93,5 +91,4 @@ public class PDI extends Usuario implements Serializable{
     public String toString() {
         return "grupof.PDI[ id=" + CodPDI + " ]";
     }
-    
 }

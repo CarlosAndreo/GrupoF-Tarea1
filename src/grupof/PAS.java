@@ -14,12 +14,10 @@ import javax.persistence.Entity;
  * @author GRUPOF
  */
 @Entity
-@DiscriminatorValue(value="PAS")
+@DiscriminatorValue(value="PA")
 public class PAS extends Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long CodPAS;
 
     public Long getCodPAS() {
@@ -53,6 +51,5 @@ public class PAS extends Usuario implements Serializable {
     @Override
     public String toString() {
         return "grupof.PAS[ id=" + CodPAS + " ]";
-    }
-    
+    } 
 }
