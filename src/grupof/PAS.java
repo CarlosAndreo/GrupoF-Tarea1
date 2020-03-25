@@ -6,6 +6,7 @@
 package grupof;
 
 import java.io.Serializable;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 /**
  * SII
@@ -13,6 +14,7 @@ import javax.persistence.Entity;
  * @author GRUPOF
  */
 @Entity
+@DiscriminatorValue(value="PAS")
 public class PAS extends Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -9,6 +9,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,8 +26,14 @@ import javax.persistence.Temporal;
  * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
+
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(
+    name="DiscrCOL",
+    discriminatorType=DiscriminatorType.STRING
+)
+@DiscriminatorValue(value="U")
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;

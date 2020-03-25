@@ -7,6 +7,7 @@ package grupof;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 
@@ -16,6 +17,7 @@ import javax.persistence.ManyToMany;
  * @author GRUPOF
  */
 @Entity
+@DiscriminatorValue(value="PDI")
 public class PDI extends Usuario implements Serializable{
     private static final long serialVersionUID = 1L;
     //@Id

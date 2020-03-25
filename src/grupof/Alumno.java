@@ -7,6 +7,7 @@ package grupof;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -18,6 +19,7 @@ import javax.persistence.ManyToMany;
  * @author GRUPOF
  */
 @Entity
+@DiscriminatorValue(value="A")
 public class Alumno extends Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
