@@ -8,13 +8,15 @@ package grupof;
 import java.io.Serializable;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 /**
  * SII
  * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
 @Entity
-@DiscriminatorValue(value="PA")
+//@DiscriminatorValue(value="PA")
+@PrimaryKeyJoinColumn(referencedColumnName="UserID")
 public class PAS extends Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
