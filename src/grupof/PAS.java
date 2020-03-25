@@ -13,6 +13,7 @@ import javax.persistence.*;
  * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
+
 @Entity
 //@DiscriminatorValue(value="PA")
 @PrimaryKeyJoinColumn(name="UserID")
