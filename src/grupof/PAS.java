@@ -8,7 +8,8 @@ package grupof;
 import java.io.Serializable;
 import javax.persistence.Entity;
 /**
- *
+ * SII
+ * 3ºA Ingeniería Informática 
  * @author GRUPOF
  */
 @Entity
