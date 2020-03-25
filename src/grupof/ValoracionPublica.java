@@ -23,7 +23,6 @@ public class ValoracionPublica implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long IDValoracion;
-    private String TipoValoracion;
     private Integer Calificacion;
     private String ComentariosUsuario;
 
@@ -33,14 +32,6 @@ public class ValoracionPublica implements Serializable {
 
     public void setIDValoracion(Long IDValoracion) {
         this.IDValoracion = IDValoracion;
-    }
-
-    public String getTipoValoracion() {
-        return TipoValoracion;
-    }
-
-    public void setTipoValoracion(String TipoValoracion) {
-        this.TipoValoracion = TipoValoracion;
     }
 
     public Integer getCalificacion() {

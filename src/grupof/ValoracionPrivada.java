@@ -12,8 +12,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- *
- * @author CARLOS
+ * SII
+ * 3ºA Ingeniería Informática 
+ * @author GRUPOF
  */
 @Entity
 public class ValoracionPrivada implements Serializable {

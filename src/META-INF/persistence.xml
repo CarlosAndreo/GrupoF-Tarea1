@@ -14,7 +14,7 @@
     <class>grupof.PDI</class>
     <class>grupof.ParticipacionEnActividad</class>
     <class>grupof.Usuario</class>
-    <class>grupof.Valoracion</class>
+    <class>grupof.ValoracionPublica</class>
     <class>grupof.ValoracionPrivada</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/BD_GrupoF"/>
