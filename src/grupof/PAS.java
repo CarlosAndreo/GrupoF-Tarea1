@@ -5,10 +5,9 @@
  */
 package grupof;
 
-import java.io.Serializable;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
-import javax.persistence.PrimaryKeyJoinColumn;
+import java.io.*;
+import javax.persistence.*;
+
 /**
  * SII
  * 3ºA Ingeniería Informática 
@@ -20,20 +19,20 @@ import javax.persistence.PrimaryKeyJoinColumn;
 public class PAS extends Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Long CodPAS;
+    private Long UserID;
 
     public Long getCodPAS() {
-        return CodPAS;
+        return UserID;
     }
 
-    public void setCodPAS(Long CodPAS) {
-        this.CodPAS = CodPAS;
+    public void setCodPAS(Long UserID) {
+        this.UserID = UserID;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (CodPAS != null ? CodPAS.hashCode() : 0);
+        hash += (UserID != null ? UserID.hashCode() : 0);
         return hash;
     }
 
@@ -44,7 +43,7 @@ public class PAS extends Usuario implements Serializable {
             return false;
         }
         PAS other = (PAS) object;
-        if ((this.CodPAS == null && other.CodPAS != null) || (this.CodPAS != null && !this.CodPAS.equals(other.CodPAS))) {
+        if ((this.UserID == null && other.UserID != null) || (this.UserID != null && !this.UserID.equals(other.UserID))) {
             return false;
         }
         return true;
@@ -52,6 +51,6 @@ public class PAS extends Usuario implements Serializable {
 
     @Override
     public String toString() {
-        return "grupof.PAS[ id=" + CodPAS + " ]";
+        return "grupof.PAS[ id=" + UserID + " ]";
     } 
 }

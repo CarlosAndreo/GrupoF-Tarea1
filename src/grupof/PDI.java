@@ -5,12 +5,9 @@
  */
 package grupof;
 
-import java.io.Serializable;
-import java.util.List;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.PrimaryKeyJoinColumn;
+import java.io.*;
+import java.util.*;
+import javax.persistence.*;
 
 /**
  * SII
@@ -22,7 +19,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
 @PrimaryKeyJoinColumn(name="UserID")
 public class PDI extends Usuario implements Serializable{
     private static final long serialVersionUID = 1L;
-    private Long CodPDI;
+    private Long UserID;
     private String Departamento;
     private String Titulacion;
     private Long CodActividad;
@@ -30,11 +27,11 @@ public class PDI extends Usuario implements Serializable{
     private List<Asignatura> Asignaturas;
 
     public Long getCodPDI() {
-        return CodPDI;
+        return UserID;
     }
 
-    public void setCodPDI(Long CodPDI) {
-        this.CodPDI = CodPDI;
+    public void setCodPDI(Long UserID) {
+        this.UserID = UserID;
     }
 
     public String getDepartamento() {
@@ -72,7 +69,7 @@ public class PDI extends Usuario implements Serializable{
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (CodPDI != null ? CodPDI.hashCode() : 0);
+        hash += (UserID != null ? UserID.hashCode() : 0);
         return hash;
     }
 
@@ -83,7 +80,7 @@ public class PDI extends Usuario implements Serializable{
             return false;
         }
         PDI other = (PDI) object;
-        if ((this.CodPDI == null && other.CodPDI != null) || (this.CodPDI != null && !this.CodPDI.equals(other.CodPDI))) {
+        if ((this.UserID == null && other.UserID != null) || (this.UserID != null && !this.UserID.equals(other.UserID))) {
             return false;
         }
         return true;
@@ -91,6 +88,6 @@ public class PDI extends Usuario implements Serializable{
 
     @Override
     public String toString() {
-        return "grupof.PDI[ id=" + CodPDI + " ]";
+        return "grupof.PDI[ id=" + UserID + " ]";
     }
 }

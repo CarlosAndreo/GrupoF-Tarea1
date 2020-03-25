@@ -5,7 +5,7 @@
  */
 package grupof;
 
-import java.io.Serializable;
+import java.io.*;
 import java.util.*;
 import javax.persistence.*;
 
@@ -19,19 +19,19 @@ import javax.persistence.*;
 //@DiscriminatorValue(value="A")
 @PrimaryKeyJoinColumn(name="UserID")
 public class Alumno extends Usuario implements Serializable {
-
+    
     private static final long serialVersionUID = 1L;
-    private Long CodUMA;//codAlumno
+    private Long UserID;//codAlumno
     @ManyToMany //Relacion Alumno-Asignatura
     @JoinTable(name="jnd_alum_asig",joinColumns=@JoinColumn(name="alumno_fk"),inverseJoinColumns=@JoinColumn(name="asignatura_fk"))
     private List<Asignatura> Asignaturas;
     
     public Long getCodUMA() {
-        return CodUMA;
+        return UserID;
     }
 
-    public void setCodUMA(Long CodUMA) {
-        this.CodUMA = CodUMA;
+    public void setCodUMA(Long UserID) {
+        this.UserID = UserID;
     }
 
     public List<Asignatura> getAsignaturas() {
@@ -45,7 +45,7 @@ public class Alumno extends Usuario implements Serializable {
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (CodUMA != null ? CodUMA.hashCode() : 0);
+        hash += (UserID != null ? UserID.hashCode() : 0);
         return hash;
     }
 
@@ -56,7 +56,7 @@ public class Alumno extends Usuario implements Serializable {
             return false;
         }
         Alumno other = (Alumno) object;
-        if ((this.CodUMA == null && other.CodUMA != null) || (this.CodUMA != null && !this.CodUMA.equals(other.CodUMA))) {
+        if ((this.UserID == null && other.UserID != null) || (this.UserID != null && !this.UserID.equals(other.UserID))) {
             return false;
         }
         return true;
@@ -64,6 +64,6 @@ public class Alumno extends Usuario implements Serializable {
 
     @Override
     public String toString() {
-        return "grupof.Alumno[ id=" + CodUMA + " ]";
+        return "grupof.Alumno[ id=" + UserID + " ]";
     }   
 }

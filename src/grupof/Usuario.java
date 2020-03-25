@@ -8,19 +8,8 @@ package grupof;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
-import javax.persistence.DiscriminatorType;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import static javax.persistence.InheritanceType.JOINED;
-import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
+import javax.persistence.*;
+
 
 /**
  * SII
@@ -29,7 +18,7 @@ import javax.persistence.Temporal;
  */
 
 @Entity
-@Inheritance(strategy = JOINED)
+@Inheritance(strategy = InheritanceType.JOINED)
 //@DiscriminatorColumn(name="DiscrCOL",discriminatorType=DiscriminatorType.STRING)
 //@DiscriminatorValue(value="U")
 public class Usuario implements Serializable {
