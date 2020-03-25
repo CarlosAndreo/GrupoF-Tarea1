@@ -18,6 +18,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import static javax.persistence.InheritanceType.JOINED;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 
@@ -28,9 +29,8 @@ import javax.persistence.Temporal;
  */
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = JOINED)
 //@DiscriminatorColumn(name="DiscrCOL",discriminatorType=DiscriminatorType.STRING)
-
 //@DiscriminatorValue(value="U")
 public class Usuario implements Serializable {
 

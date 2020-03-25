@@ -16,7 +16,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
  */
 @Entity
 //@DiscriminatorValue(value="PA")
-@PrimaryKeyJoinColumn(referencedColumnName="UserID")
+@PrimaryKeyJoinColumn(name="UserID")
 public class PAS extends Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;

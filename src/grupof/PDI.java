@@ -19,7 +19,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
  */
 @Entity
 //@DiscriminatorValue(value="PD")
-@PrimaryKeyJoinColumn(referencedColumnName="UserID")
+@PrimaryKeyJoinColumn(name="UserID")
 public class PDI extends Usuario implements Serializable{
     private static final long serialVersionUID = 1L;
     private Long CodPDI;
