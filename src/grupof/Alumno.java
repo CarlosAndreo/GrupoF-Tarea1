@@ -8,9 +8,9 @@ package grupof;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+//import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
@@ -20,11 +20,11 @@ import javax.persistence.ManyToMany;
  * @author GRUPOF
  */
 @Entity
-public class Alumno implements Serializable {
+public class Alumno extends Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long CodUMA;//codAlumno
     @ManyToMany //Relacion Alumno-Asignatura
     @JoinTable(name="jnd_alum_asig",joinColumns=@JoinColumn(name="alumno_fk"),inverseJoinColumns=@JoinColumn(name="asignatura_fk"))
