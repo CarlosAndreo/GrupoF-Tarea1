@@ -16,8 +16,6 @@ import javax.persistence.*;
  */
 
 @Entity
-//@DiscriminatorValue(value="A")
-//@PrimaryKeyJoinColumn(name="UserID")
 public class Alumno extends Usuario implements Serializable {
     
     private static final long serialVersionUID = 1L;

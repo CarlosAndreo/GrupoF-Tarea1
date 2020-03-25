@@ -15,8 +15,6 @@ import javax.persistence.*;
  * @author GRUPOF
  */
 @Entity
-//@DiscriminatorValue(value="PD")
-//@PrimaryKeyJoinColumn(name="UserID")
 public class PDI extends Usuario implements Serializable{
     private static final long serialVersionUID = 1L;
     private Long UserID;

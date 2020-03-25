@@ -19,8 +19,6 @@ import javax.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-//@DiscriminatorColumn(name="DiscrCOL",discriminatorType=DiscriminatorType.STRING)
-//@DiscriminatorValue(value="U")
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
