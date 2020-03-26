@@ -11,3 +11,6 @@ GRUPO F INTEGRADO POR:
 -FABRICE FOUQUET CALDERÓN
 -JUAN CARLOS PÉREZ CÓRDOBA
 -ALEJANDRO ECHEVARRÍA RENGEL
+
+El comprimido diagrama de clases contiene el modelo E/R creado en datamodeler.
+El fichero generate.sql es el que se genera al ejecutar el JPA en el netbeans.
