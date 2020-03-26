@@ -17,10 +17,10 @@
     <class>grupof.ValoracionPublica</class>
     <class>grupof.ValoracionPrivada</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/BD_GrupoF"/>
-      <property name="javax.persistence.jdbc.user" value="bd"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/Sii"/>
+      <property name="javax.persistence.jdbc.user" value="sii"/>
       <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
-      <property name="javax.persistence.jdbc.password" value="bd"/>
+      <property name="javax.persistence.jdbc.password" value="sii"/>
       <property name="javax.persistence.schema-generation.database.action" value="create"/>
       <property name="javax.persistence.schema-generation.scripts.action" value="create"/>
       <property name="javax.persistence.schema-generation.scripts.create-target" value="C:\Users\carlo\Desktop\Ingeniería Informática\Tercer año\2o CUATRIMESTRE\Sii\Trabajo en grupo\Entrega T1\generate.sql"/>
